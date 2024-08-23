@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.127" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextPesoKiloVidrio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.37" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextValorKiloVidrio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.469" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCalcularVidrio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcular"
@@ -76,8 +76,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.581" />
 
+    <!--Botón para ir a la pantalla pricipal-->
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#388E3C"
+        android:text="Regresar"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtResultadoVidrio"
         android:layout_width="311dp"
         android:layout_height="30dp"
         android:textSize="25dp"

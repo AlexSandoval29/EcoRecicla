@@ -1,3 +1,4 @@
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -5,9 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/white">
-
     <!--Esta es la imagen inicial "logo" de reciclaje  NO ID-->
-
     <ImageView
         android:layout_width="250dp"
         android:layout_height="200dp"
@@ -33,7 +32,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.156" />
-
     <!--Este es el icono de usuario-->
     <ImageView
         android:layout_width="40dp"
@@ -45,7 +43,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25" />
-
     <!--Esta es la imagen marrón-->
     <ImageView
         android:layout_width="380dp"
@@ -57,7 +54,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.436" />
-
     <!--Este es el texto de "Bienvenido-->
     <TextView
         android:id="@+id/Bienvenido"
@@ -74,14 +70,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.333" />
-
     <!--prime edir text de ingreso de información: el nombre" = ID = EditTextNombre-->
     <EditText
         android:id="@+id/EditTextNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#F8FFFFFF"
-        android:hint="Nombre de Usuario:"
+        android:hint="Correo electronico:"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -100,6 +95,7 @@
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +116,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.525" />
-
     <!--Btón de inicio de sesion = ID = btnIniciosesion-->
     <Button
         android:id="@+id/btnIniciosesion"
@@ -133,8 +128,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.595" />
-
-
     <!--Boton para recuperar la contraseña = ID = btnRecupera-->
     <Button
         android:id="@+id/btnRecupera"
@@ -151,9 +144,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.688" />
-
-
-
     <!--Solo es la linea que subraya el boton de arriba-->
     <TextView
         android:layout_width="wrap_content"
@@ -168,7 +158,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.679" />
-
     <!--es el texto"Aun no tienes cuenta,"-->
     <TextView
         android:layout_width="wrap_content"
@@ -184,7 +173,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.924" />
-
     <!--Botón de REGISTRATE == ID = btnRegistrate-->
     <Button
         android:id="@+id/btnregistrate"
@@ -200,7 +188,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"/>
-
     <!--Solo es la linea que subraya el boton de arriba-->
     <TextView
         android:layout_width="wrap_content"
@@ -215,7 +202,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.99" />
-
     <!--Botón: "iniciar sesión con FACEBOOK" = ID =  btnFacebook-->
     <Button
         android:id="@+id/btnFacebook"
@@ -229,11 +215,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.778" />
-
-
     <!--Imagen : Logo facebook-->
     <ImageView
-
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:src="@drawable/facebook"
@@ -267,6 +250,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

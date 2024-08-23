@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantalla_estadisticas"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageViewTopTitle"
+        android:layout_width="142dp"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/simbolo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="110dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTopTitle"
+        app:layout_constraintVertical_bias="0.0">
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EcoEstadisticas"
+            android:textAlignment="center"
+            android:textColor="#388E3C"
+            android:background="#F0D9B0"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtMes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+            android:drawablePadding="10dp"
+            android:hint="Ingresa mes" />
+
+        <EditText
+            android:id="@+id/txtMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="?attr/actionModePasteDrawable"
+            android:drawablePadding="10dp"
+            android:hint="Ingresa tipo de Material" />
+
+        <EditText
+            android:id="@+id/txtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:drawablePadding="10dp"
+            android:hint="Ingresa el valor" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:text="Agregar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+                />
+            <TextView
+                android:id="@+id/txtEstadisticas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:text="Estadisticas"
+                android:textColor="#388E3C"
+                android:textStyle="bold"
+                android:textSize="40dp" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TableLayout
+            android:id="@+id/myTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:text="Mes"
+                    android:padding="10dp"
+                    android:background="#EEEEEE"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:text="Material"
+                    android:padding="10dp"
+                    android:background="#EEEEEE"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text="Precio"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:background="#EEEEEE" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="630dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRetroceso"
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#4CAF50"
+                app:icon="@android:drawable/ic_menu_revert" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0D9B0"
+            android:gravity="center"
+            android:text="      EcoRecicla    "
+            android:textColor="#388E3C"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

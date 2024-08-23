@@ -48,7 +48,7 @@ public class pantalla_principal extends AppCompatActivity {
     }
 
     public void irPantallaEstadisticas(){
-        Intent pantallaEstadisticas = new Intent(this, PantallaEstadisticas.class);
+        Intent pantallaEstadisticas = new Intent(this, pantalla_estadisticas.class);
         startActivity(pantallaEstadisticas);
     }
 
